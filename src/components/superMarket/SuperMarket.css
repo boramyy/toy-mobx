@@ -1,0 +1,19 @@
+.wrap_supermarket {
+  overflow: hidden;
+  height: 500px;
+  background-color: #eee;
+}
+
+.wrap_products {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.wrap_basket {
+  width: 50%;
+  float: left;
+  height: 100%;
+  background-color: #fff;
+}
