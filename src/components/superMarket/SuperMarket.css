@@ -1,19 +1,66 @@
+ul {margin:0;padding:0}
+li {list-style:none}
 .wrap_supermarket {
   overflow: hidden;
+  width: 80%;
+  min-width: 500px;
   height: 500px;
+  margin: 0 auto;
   background-color: #eee;
+}
+
+.wrap_supermarket h2 {
+  height: 70px;
+  margin:0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .wrap_products {
   float: left;
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height: 430px;
   background-color: #eee;
 }
 
-.wrap_basket {
-  width: 50%;
-  float: left;
-  height: 100%;
+.box_product {
+  display: flex;
+  margin: 10px;
+  padding: 15px 30px;
+  border: 1px solid #ddd;
   background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+.box_product:hover {
+  border-color: #333;
+  cursor: pointer;
+}
+
+.wrap_basket {
+  position: relative;
+  float: left;
+  width: 60%;
+  height: 430px;
+  padding: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.box_basket {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
+.name_basket {
+  margin-right: 15px;
+}
+
+.box_total {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  font-size: 30px;
+  text-align: right;
 }

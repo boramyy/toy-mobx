@@ -5,11 +5,15 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "mobx-react";
 import CounterStore from "./stores/counter";
+import ProductStockStore from "./stores/productStock";
+import BasketStore from "./stores/basket";
 
 const counter = new CounterStore();
+const productStock = new ProductStockStore();
+const basket = new BasketStore();
 
 ReactDOM.render(
-  <Provider counter={counter}>
+  <Provider counter={counter} productStock={productStock} basket={basket}>
     <App />
   </Provider>,
   document.getElementById("root")

@@ -9,7 +9,7 @@ class SuperMarket extends Component {
       <div className="wrap_supermarket">
         <h2>super market</h2>
         <ProductsWrapper />
-        <BasketWrapper className="wrap_basket" />
+        <BasketWrapper />
       </div>
     );
   }
